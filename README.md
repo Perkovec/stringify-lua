@@ -1,13 +1,11 @@
-StarWars Names
+Stringify lua
 =======
 
-Get a random Star Wars name
+Converting lua table to string
 
 
 ```Lua
-local SW = require "startwarsnames"
+require "stringify"
 
-SW.random() -- Return random name
-
-SW.all -- All names in table
+print(table.stringify({["foo"] = "bar", [123] = 456})) -- {[123]=456,foo="bar"}
 ```
