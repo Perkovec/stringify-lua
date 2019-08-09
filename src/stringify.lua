@@ -6,8 +6,8 @@ local function val_to_str ( v )
     end
     return '"' .. string.gsub(v,'"', '\\"' ) .. '"'
   else
-    return "table" == type( v ) and table.tostring( v ) or
-      tostring( v )
+    return "table" == type( v ) and table.stringify( v ) or 
+    tostring( v )
   end
 end
 
